@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { Calendar, MapPin, Clock, Sparkles, ShieldCheck, ArrowRight } from "lucide-react";
 import ArucLogo, { ArucTypography } from "./ArucLogo";
+import welnessImg from "../assets/images/welnessaruc.jpg";
 
 interface HeroProps {
   headlineText: string;
@@ -14,7 +15,7 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
       {/* Background Image with warm overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/welnessaruc.jpg"
+          src={welnessImg}
           alt="Espaço da Imersão A Essência"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover brightness-[0.65] contrast-[1.05] scale-102 transition-all duration-[8s]"

@@ -1,6 +1,8 @@
 import React from "react";
 import { Smile, Quote, Heart, Sparkles, Award, Flower } from "lucide-react";
 import { motion } from "motion/react";
+import adrianaImg from "../assets/images/adriana_quintal_1781532995773.jpg";
+import fernandaImg from "../assets/images/fernanda.jpg";
 
 export default function Sobre() {
   return (
@@ -61,7 +63,7 @@ export default function Sobre() {
                 {/* Main photo container */}
                 <div className="relative overflow-hidden rounded-[1.8rem] border-[6px] border-white bg-brand-dark aspect-[4/5] shadow-[0_15px_30px_rgba(44,39,36,0.06)]">
                   <img
-                    src="/src/assets/images/adriana_quintal_1781532995773.jpg"
+                    src={adrianaImg}
                     alt="Adriana Quintal — Terapeuta e Criadora da ARUC"
                     referrerPolicy="no-referrer"
                     loading="lazy"
@@ -177,7 +179,7 @@ export default function Sobre() {
                 {/* Main photo container */}
                 <div className="relative overflow-hidden rounded-[1.8rem] border-[6px] border-white bg-brand-dark aspect-[4/5] shadow-[0_15px_30px_rgba(44,39,36,0.06)]">
                   <img
-                    src="/src/assets/images/fernanda.jpg"
+                    src={fernandaImg}
                     alt="Fernanda Moreira — Facilitadora"
                     referrerPolicy="no-referrer"
                     loading="lazy"

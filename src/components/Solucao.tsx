@@ -2,6 +2,7 @@ import React from "react";
 import { Flower, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import ArucLogo from "./ArucLogo";
+import espacoMulheresImg from "../assets/images/espaçomulheres.jpg";
 
 interface SolucaoProps {
   onCtaClick: () => void;
@@ -95,7 +96,7 @@ export default function Solucao({ onCtaClick }: SolucaoProps) {
                 {/* Main photo container (using taller aspect ratio on mobile to showcase the room landscape clearly without being too small) */}
                 <div className="relative overflow-hidden rounded-3xl border-4 border-[#fffdf6] bg-brand-dark w-full aspect-[4/5] sm:aspect-square md:aspect-[4/3] shadow-none">
                   <img
-                    src="/src/assets/images/espaçomulheres.jpg"
+                    src={espacoMulheresImg}
                     alt="Espaço da Imersão A Essência"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 opacity-100"

@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Compass, Waves, Activity, Sparkles, Plus, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import ArucLogo from "./ArucLogo";
+import reconhecerImg from "../assets/images/reconhecer.jpg";
+import sentirImg from "../assets/images/sentir.jpg";
+import moverImg from "../assets/images/mover.jpg";
+import integrarImg from "../assets/images/integrar.jpg";
+import doubleExposureImg from "../assets/images/double_exposure_woman_1781556370324.jpg";
 
 interface CardData {
   step: string;
@@ -143,7 +148,7 @@ export default function Jornada() {
       title: "RECONHECER",
       icon: Compass,
       subtitle: "ONDE ESTÃO OS BLOQUEIOS",
-      image: "/src/assets/images/reconhecer.jpg",
+      image: reconhecerImg,
       desc: "Reconhecer é olhar, através do corpo, para as raízes que travam o seu crescimento, crenças e traumas guardados sem nome. Você vai se perguntar: quem sou eu além dos papéis?",
     },
     {
@@ -151,7 +156,7 @@ export default function Jornada() {
       title: "SENTIR",
       icon: Waves,
       subtitle: "Clareza sobre onde chegar",
-      image: "/src/assets/images/sentir.jpg",
+      image: sentirImg,
       desc: "Um momento de pausa para enxergar, com nitidez, a intenção que já existe em você, e para onde ela quer te levar.",
     },
     {
@@ -159,7 +164,7 @@ export default function Jornada() {
       title: "MOVER",
       icon: Activity,
       subtitle: "Expressão corporal livre",
-      image: "/src/assets/images/mover.jpg",
+      image: moverImg,
       desc: "Movimento, desbloqueio e expressão. Corpo em movimento, vida em movimento. Você vai soltar o que estava rígido e descobrir a leveza que existe quando você se expressa.",
     },
     {
@@ -167,7 +172,7 @@ export default function Jornada() {
       title: "INTEGRAR",
       icon: Sparkles,
       subtitle: "Acolhimento coletivo",
-      image: "/src/assets/images/integrar.jpg",
+      image: integrarImg,
       desc: "Confiança, conexão coletiva de cura e celebração. O encerramento emocionante que recolhe tudo e te envia de volta para a sua vida mais inteira, mais presente e mais você.",
     },
   ];
@@ -176,7 +181,7 @@ export default function Jornada() {
     <section id="jornada-section" className="bg-gradient-to-b from-[#fdf2e9] via-[#fffcf9] to-[#faf0e6] py-16 lg:py-24 text-center relative overflow-hidden">
       {/* Background double-exposure artistic image blended with the brand and warm sunset tones */}
       <img
-        src="/src/assets/images/double_exposure_woman_1781556370324.jpg"
+        src={doubleExposureImg}
         alt="Estética de reconexão feminina"
         className="absolute inset-0 w-full h-full object-cover opacity-[0.22] pointer-events-none select-none mix-blend-multiply"
         referrerPolicy="no-referrer"

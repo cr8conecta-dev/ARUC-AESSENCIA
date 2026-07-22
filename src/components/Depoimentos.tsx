@@ -1,5 +1,6 @@
 import React from "react";
 import { Quote, Star, AlertCircle } from "lucide-react";
+import casaLoaneImg from "../assets/images/casaloane.jpg";
 
 export default function Depoimentos() {
   const testimonials = [
@@ -34,7 +35,7 @@ export default function Depoimentos() {
       {/* Background Image with 40% opacity */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <img
-          src="/src/assets/images/casaloane.jpg"
+          src={casaLoaneImg}
           alt="Fundo Refúgio e Bem-Estar"
           referrerPolicy="no-referrer"
           loading="lazy"

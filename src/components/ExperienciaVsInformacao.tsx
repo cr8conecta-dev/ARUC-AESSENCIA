@@ -15,6 +15,7 @@ import {
   Play
 } from "lucide-react";
 import ArucLogo from "./ArucLogo";
+import exerciciosImg from "../assets/images/exercicios.jpg";
 
 export default function ExperienciaVsInformacao() {
   const tentativas = [
@@ -231,7 +232,7 @@ export default function ExperienciaVsInformacao() {
                   <div className="bg-white border border-stone-100 rounded-xl p-3 space-y-2.5 shadow-3xs">
                     <div className="aspect-video bg-[#faf5ee] rounded-lg relative overflow-hidden flex items-center justify-center group border border-brand/10">
                       <img 
-                        src="/src/assets/images/exercicios.jpg" 
+                        src={exerciciosImg}
                         alt="Módulo 01 · Movimentar" 
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         referrerPolicy="no-referrer"

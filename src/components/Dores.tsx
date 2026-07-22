@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowDown } from "lucide-react";
 import { motion } from "motion/react";
 import ArucLogo from "./ArucLogo";
+import tiredWomanImg from "../assets/images/tired_woman_bg_1781556077938.jpg";
 
 export default function Dores() {
   const painBullets = [
@@ -39,7 +40,7 @@ export default function Dores() {
     >
       {/* Background image of tired woman with higher opacity as requested */}
       <img
-        src="/src/assets/images/tired_woman_bg_1781556077938.jpg"
+        src={tiredWomanImg}
         alt="Sentimento de exaustão e cansaço"
         className="absolute inset-0 w-full h-full object-cover opacity-[0.16] pointer-events-none select-none mix-blend-multiply"
         referrerPolicy="no-referrer"
