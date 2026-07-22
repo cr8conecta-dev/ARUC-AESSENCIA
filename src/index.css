@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand: #cca98f;
+  --color-brand-light: #f4eae1;
+  --color-brand-dark: #8c6e56;
+  --color-brand-charcoal: #2c2724;
+  --color-brand-sand: #fdfbf7;
+  --color-brand-cream: #faf5ee;
+  --color-brand-green: #596147;
+  --color-brand-green-light: #e6ebdd;
+  --color-brand-blue: #8fb1c6;
+  --color-brand-blue-light: #e9f0f4;
+}
+
+@layer utilities {
+  .serif-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+}
+
+/* Custom styles for professional smooth scrolling and fine aesthetics */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #cca98f;
+  color: white;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf5ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #cca98f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8c6e56;
+}

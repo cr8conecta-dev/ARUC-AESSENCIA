@@ -1,0 +1,8 @@
+{
+  "name": "Remix: A Essência",
+  "description": "Uma landing page de alta conversão para a imersão presencial feminina A Essência, guiada por Adriana Quintal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
