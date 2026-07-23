@@ -34,7 +34,7 @@ export default function Garantia() {
   }, []);
 
   return (
-    <section id="urgencia-garantia-section" className="bg-[#fcfaf4] py-12 lg:py-16 font-sans relative overflow-hidden text-brand-charcoal">
+    <section id="urgencia-garantia-section" className="cv-auto bg-[#fcfaf4] py-12 lg:py-16 font-sans relative overflow-hidden text-brand-charcoal">
       {/* Soft overlay vectors to link theme colors beautifully */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-brand/5 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-5xl mx-auto px-6 space-y-12 lg:space-y-16 relative z-10">

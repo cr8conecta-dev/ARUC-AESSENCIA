@@ -17,7 +17,7 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
         <img
           src={welnessImg}
           alt="Espaço da Imersão A Essência"
-          referrerPolicy="no-referrer"
+          referrerPolicy="no-referrer" decoding="async"
           className="w-full h-full object-cover brightness-[0.65] contrast-[1.05] scale-102 transition-all duration-[8s]"
         />
         {/* Soft terracotta and amber overlay elements gradient with reduced opacities */}
@@ -26,7 +26,7 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
         
 
         {/* Ambient golden light glow effect matched from the last section */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-amber-500/15 rounded-full blur-[140px] pointer-events-none select-none z-1 animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-amber-500/15 rounded-full blur-[120px] pointer-events-none select-none z-1" />
         <div className="absolute w-[300px] h-[300px] bg-yellow-600/12 rounded-full blur-[100px] pointer-events-none select-none z-1 top-1/3 left-1/3" />
       </div>
 
@@ -50,7 +50,7 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
         </div>
 
         {/* Floating live tag */}
-        <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full">
+        <div className="flex items-center gap-2 bg-white/15 border border-white/20 px-3 py-1.5 rounded-full">
           <span className="w-2 h-2 bg-brand rounded-full animate-pulse" />
           <span className="font-sans text-xs sm:text-xs tracking-wider uppercase text-brand-light font-medium">
             Imersão Exclusiva · Presencial
@@ -64,8 +64,8 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
         {/* Main interactive Headline */}
         <div className="flex items-center justify-center w-full mb-5">
           <motion.h1
-            initial={{ opacity: 0, filter: "blur(8px)", y: 8 }}
-            animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-medium tracking-tight leading-[1.12] text-white max-w-4xl transition-all duration-300 drop-shadow-[0_2px_15px_rgba(40,15,5,0.35)]"
           >
@@ -75,8 +75,8 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
 
         {/* Subheadline Layout */}
         <motion.p
-          initial={{ opacity: 0, filter: "blur(8px)" }}
-          animate={{ opacity: 1, filter: "blur(0px)" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
           className="font-sans text-sm sm:text-base lg:text-lg text-white font-semibold max-w-2xl leading-relaxed mb-5"
         >
@@ -88,7 +88,7 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="bg-brand-charcoal/60 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-center justify-center gap-4.5 sm:gap-6 max-w-2xl w-full mb-6 shadow-lg"
+          className="bg-brand-charcoal/75 border border-white/10 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-center justify-center gap-4.5 sm:gap-6 max-w-2xl w-full mb-6 shadow-lg"
         >
           <div className="flex items-center gap-3">
             <Calendar className="w-5 h-5 text-brand" />
@@ -130,7 +130,7 @@ export default function Hero({ headlineText, onCtaClick }: HeroProps) {
           {/* Animated terracotta pulse button with high-end style */}
           <div className="relative inline-block w-full sm:w-auto">
             {/* Soft pulsing aura ring */}
-            <div className="absolute -inset-1.5 bg-brand/35 rounded-full blur-md group-hover:bg-brand/45 transition-all duration-300 animate-pulse" />
+            <div className="absolute -inset-1.5 bg-brand/35 rounded-full blur-md group-hover:bg-brand/45 transition-all duration-300" />
             
             <button
               onClick={onCtaClick}

@@ -235,7 +235,7 @@ export default function ExperienciaVsInformacao() {
                         src={exerciciosImg}
                         alt="Módulo 01 · Movimentar" 
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        referrerPolicy="no-referrer"
+                        referrerPolicy="no-referrer" loading="lazy" decoding="async"
                       />
                       {/* Elegant dark overlay */}
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />

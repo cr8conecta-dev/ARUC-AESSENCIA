@@ -84,7 +84,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faq-section" className="bg-brand-sand py-12 lg:py-16 font-sans border-b border-brand-light/35">
+    <section id="faq-section" className="cv-auto bg-brand-sand py-12 lg:py-16 font-sans border-b border-brand-light/35">
       <div className="max-w-5xl mx-auto px-6 lg:px-12">
         
         {/* Header Section */}
@@ -96,8 +96,8 @@ export default function FaqSection() {
             DÚVIDAS E SEGURANÇA
           </span>
           <motion.h2
-            initial={{ opacity: 0, filter: "blur(10px)", y: 15 }}
-            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 1.1, ease: "easeOut" }}
             className="font-serif text-2xl sm:text-3xl lg:text-[2.6rem] font-black text-brand-charcoal tracking-tight leading-tight"

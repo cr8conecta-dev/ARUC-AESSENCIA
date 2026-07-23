@@ -33,8 +33,8 @@ export default function Oferta({ onCtaClick }: OfertaProps) {
           INSCRIÇÃO
         </span>
         <motion.h2
-          initial={{ opacity: 0, filter: "blur(10px)", y: 15 }}
-          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#5c3e35] mb-5"
@@ -43,7 +43,7 @@ export default function Oferta({ onCtaClick }: OfertaProps) {
         </motion.h2>
         
         {/* Straw-white translucent header banner */}
-        <div className="inline-block bg-[#faf5eb]/90 backdrop-blur-sm text-[#5c3e35] border border-[#cca98f]/20 font-sans font-semibold px-6 sm:px-8 py-4 sm:py-5 rounded-3xl mb-8 text-base sm:text-lg max-w-xl mx-auto shadow-sm leading-relaxed">
+        <div className="inline-block bg-[#faf5eb]/90 text-[#5c3e35] border border-[#cca98f]/20 font-sans font-semibold px-6 sm:px-8 py-4 sm:py-5 rounded-3xl mb-8 text-base sm:text-lg max-w-xl mx-auto shadow-sm leading-relaxed">
           Garanta sua vaga na aula presencial mais aguardada de São Paulo. Experiência íntima e cuidada.
         </div>
 
@@ -51,7 +51,7 @@ export default function Oferta({ onCtaClick }: OfertaProps) {
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="relative flex items-center justify-center w-28 h-28 sm:w-32 sm:h-32">
             {/* Elegant outer glowing/radiating rings */}
-            <div className="absolute inset-0 rounded-full border border-[#cca98f]/30 scale-125 animate-pulse" />
+            <div className="absolute inset-0 rounded-full border border-[#cca98f]/30 scale-125" />
             <div className="absolute inset-0 rounded-full border border-[#cca98f]/10 scale-150" />
             
             {/* Stamp-like scalloped or clean circular seal body */}
@@ -163,7 +163,7 @@ export default function Oferta({ onCtaClick }: OfertaProps) {
               {/* Interactive call to action button */}
               <div className="relative w-full">
                 {/* Soft pulsing aura ring */}
-                <div className="absolute -inset-1.5 bg-[#cca98f]/20 rounded-2xl blur-md group-hover:bg-[#cca98f]/30 transition-all duration-300 animate-pulse" />
+                <div className="absolute -inset-1.5 bg-[#cca98f]/20 rounded-2xl blur-md group-hover:bg-[#cca98f]/30 transition-all duration-300" />
                 
                 <button
                   onClick={onCtaClick}

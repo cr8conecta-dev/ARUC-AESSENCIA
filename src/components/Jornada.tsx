@@ -23,7 +23,7 @@ function JornadaCard({ card, idx }: { card: any; idx: number; key?: any }) {
 
   return (
     <div
-      className="bg-white/95 backdrop-blur-sm group hover:bg-white transition-all duration-500 p-8 sm:p-10 rounded-3xl border border-brand-light/50 hover:border-brand/35 text-brand-charcoal shadow-md hover:shadow-xl flex flex-col justify-between aspect-auto md:aspect-square relative overflow-hidden"
+      className="bg-white/95 group hover:bg-white transition-all duration-500 p-8 sm:p-10 rounded-3xl border border-brand-light/50 hover:border-brand/35 text-brand-charcoal shadow-md hover:shadow-xl flex flex-col justify-between aspect-auto md:aspect-square relative overflow-hidden"
     >
       {/* Decorative absolute element (Step number) - boosted visibility for mobile */}
       <span className="absolute right-6 top-6 font-mono text-8xl font-black text-brand-light/20 group-hover:text-brand/8 select-none transition-colors duration-300">
@@ -60,7 +60,7 @@ function JornadaCard({ card, idx }: { card: any; idx: number; key?: any }) {
               <img 
                 src={card.image}
                 alt={card.title}
-                referrerPolicy="no-referrer"
+                referrerPolicy="no-referrer" loading="lazy" decoding="async"
                 className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
               />
             </div>
@@ -183,13 +183,13 @@ export default function Jornada() {
       <img
         src={doubleExposureImg}
         alt="Estética de reconexão feminina"
-        className="absolute inset-0 w-full h-full object-cover opacity-[0.22] pointer-events-none select-none mix-blend-multiply"
-        referrerPolicy="no-referrer"
+        className="absolute inset-0 w-full h-full object-cover opacity-[0.20] pointer-events-none select-none"
+        referrerPolicy="no-referrer" loading="lazy" decoding="async"
       />
 
       {/* Warm sunset/orange glowing energy light orbs */}
       <div className="absolute top-1/4 left-1/4 w-[450px] h-[450px] bg-orange-400/15 rounded-full blur-[110px] pointer-events-none select-none" />
-      <div className="absolute bottom-1/3 right-1/4 w-[550px] h-[550px] bg-amber-400/18 rounded-full blur-[130px] pointer-events-none select-none animate-[pulse_6s_infinite]" />
+      <div className="absolute bottom-1/3 right-1/4 w-[550px] h-[550px] bg-amber-400/18 rounded-full blur-[110px] pointer-events-none select-none" />
       
       {/* Large faint background logo watermark to bring branding coherence */}
       <div className="absolute -top-12 -left-12 opacity-[0.03] pointer-events-none select-none text-brand-dark">
@@ -208,8 +208,8 @@ export default function Jornada() {
           A JORNADA DE RECONEXÃO
         </span>
         <motion.h2
-          initial={{ opacity: 0, filter: "blur(10px)", y: 15 }}
-          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-brand-charcoal tracking-tight mb-5"

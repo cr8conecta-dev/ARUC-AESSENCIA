@@ -32,6 +32,26 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Performance: skip rendering work for off-screen sections (applied seletivamente
+   apenas em seções abaixo da Oferta, para não afetar o scroll do botão de CTA). */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1200px;
+}
+
+/* Acessibilidade + performance: se o usuário pediu "reduzir movimento" no sistema,
+   praticamente desligamos animações e transições. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 ::selection {
   background-color: #cca98f;
   color: white;

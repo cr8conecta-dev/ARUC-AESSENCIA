@@ -67,8 +67,8 @@ export default function Beneficios() {
           </span>
           
           <motion.h2
-            initial={{ opacity: 0, filter: "blur(10px)", y: 15 }}
-            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 1.1, ease: "easeOut" }}
             className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-brand tracking-tight leading-tight"

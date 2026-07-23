@@ -104,7 +104,7 @@ Gostaria de receber o link de pagamento do Mercado Pago para garantir minha vaga
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-stone-900/80 backdrop-blur-md"
+            className="absolute inset-0 bg-stone-900/80"
           />
 
           {/* Modal Content */}

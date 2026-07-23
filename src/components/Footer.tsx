@@ -9,7 +9,7 @@ export default function Footer({ onCtaClick }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="footer-section" className="relative text-brand-charcoal overflow-hidden border-t border-[#cca98f]/20">
+    <footer id="footer-section" className="cv-auto relative text-brand-charcoal overflow-hidden border-t border-[#cca98f]/20">
       
       {/* BLOCO 14 — CTA FINAL: Seção com fundo claro e elegante */}
       <div className="relative py-12 sm:py-16 flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-[#fdfbf7]">
@@ -40,7 +40,7 @@ export default function Footer({ onCtaClick }: FooterProps) {
           <div className="w-full flex flex-col items-center gap-4.5 pt-3">
             <div className="relative inline-block w-full sm:w-auto">
               {/* Outer pulsing ring that glows in the brand's elegant terracotta/gold color */}
-              <div className="absolute -inset-1.5 bg-[#cca98f]/20 rounded-full blur-md group-hover:bg-[#cca98f]/30 transition-all duration-300 animate-pulse" />
+              <div className="absolute -inset-1.5 bg-[#cca98f]/20 rounded-full blur-md group-hover:bg-[#cca98f]/30 transition-all duration-300" />
               
               <button
                 onClick={onCtaClick}

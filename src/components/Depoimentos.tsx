@@ -37,7 +37,7 @@ export default function Depoimentos() {
         <img
           src={casaLoaneImg}
           alt="Fundo Refúgio e Bem-Estar"
-          referrerPolicy="no-referrer"
+          referrerPolicy="no-referrer" decoding="async"
           loading="lazy"
           className="w-full h-full object-cover opacity-40"
         />
@@ -93,7 +93,7 @@ export default function Depoimentos() {
                    <img
                      src={test.avatar}
                      alt={test.name}
-                     referrerPolicy="no-referrer"
+                     referrerPolicy="no-referrer" decoding="async"
                      loading="lazy"
                      className="w-full h-full object-cover"
                    />

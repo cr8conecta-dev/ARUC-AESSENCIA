@@ -50,8 +50,8 @@ export default function Solucao({ onCtaClick }: SolucaoProps) {
               <ArucLogo symbolOnly className="h-[36px] w-[45px] text-brand-dark hover:scale-105 transition-transform duration-300" />
             </div>
             <motion.div
-              initial={{ opacity: 0, filter: "blur(10px)", y: 15 }}
-              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 1.1, ease: "easeOut" }}
               className="space-y-3"
@@ -91,20 +91,20 @@ export default function Solucao({ onCtaClick }: SolucaoProps) {
             <div className="lg:col-span-6 flex flex-col items-center w-full">
               <div className="relative group w-full max-w-full">
                 {/* Outer decorative box shifted backwards */}
-                <div className="absolute -inset-3 border-2 rounded-3xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-300 animate-pulse" style={{ borderColor: `${accentColor}40` }} />
+                <div className="absolute -inset-3 border-2 rounded-3xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-300" style={{ borderColor: `${accentColor}40` }} />
                 
                 {/* Main photo container (using taller aspect ratio on mobile to showcase the room landscape clearly without being too small) */}
                 <div className="relative overflow-hidden rounded-3xl border-4 border-[#fffdf6] bg-brand-dark w-full aspect-[4/5] sm:aspect-square md:aspect-[4/3] shadow-none">
                   <img
                     src={espacoMulheresImg}
                     alt="Espaço da Imersão A Essência"
-                    referrerPolicy="no-referrer"
+                    referrerPolicy="no-referrer" loading="lazy" decoding="async"
                     className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 opacity-100"
                   />
                 </div>
 
                 {/* Floating micro text badge - scaled and positioned elegantly for mobile and desktop */}
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 bg-brand-charcoal/95 backdrop-blur-md px-3.5 py-3 sm:px-5 sm:py-4 rounded-2xl flex items-center gap-3 sm:gap-3.5 border border-white/10">
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 bg-brand-charcoal/95 px-3.5 py-3 sm:px-5 sm:py-4 rounded-2xl flex items-center gap-3 sm:gap-3.5 border border-white/10">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-white transition-all duration-500 shrink-0" style={{ backgroundColor: accentColor }}>
                     <Flower className="w-5 h-5 sm:w-6 sm:h-6 text-white animate-pulse" />
                   </div>
@@ -122,7 +122,7 @@ export default function Solucao({ onCtaClick }: SolucaoProps) {
           <div className="mt-14 sm:mt-16 text-center select-none flex flex-col items-center justify-center">
             <div className="relative inline-block">
               {/* Outer pulsing ring that glows in the brand's elegant terracotta/gold color */}
-              <div className="absolute -inset-1.5 bg-[#cca98f]/20 rounded-full blur-md group-hover:bg-[#cca98f]/30 transition-all duration-300 animate-pulse" />
+              <div className="absolute -inset-1.5 bg-[#cca98f]/20 rounded-full blur-md group-hover:bg-[#cca98f]/30 transition-all duration-300" />
               
               <button
                 onClick={onCtaClick}

@@ -17,7 +17,7 @@ export default function Sobre() {
 
       <div className="max-w-[92rem] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Large Luxury Card with a sophisticated light-cream paper layout */}
-        <div className="bg-[#fcfaf6]/95 backdrop-blur-md rounded-[3rem] sm:rounded-[4rem] p-6 sm:p-10 lg:p-14 border border-brand/20 shadow-[0_20px_50px_rgba(140,110,86,0.08)] relative overflow-hidden">
+        <div className="bg-[#fcfaf6]/95 rounded-[3rem] sm:rounded-[4rem] p-6 sm:p-10 lg:p-14 border border-brand/20 shadow-[0_20px_50px_rgba(140,110,86,0.08)] relative overflow-hidden">
           
           {/* Subtle elegant inner border lines decoration */}
           <div className="absolute inset-4 rounded-[2rem] sm:rounded-[3rem] border border-[#cca98f]/10 pointer-events-none" />
@@ -33,8 +33,8 @@ export default function Sobre() {
             </div>
             
             <motion.h2
-              initial={{ opacity: 0, filter: "blur(10px)", y: 15 }}
-              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 1.1, ease: "easeOut" }}
               className="font-serif text-3xl sm:text-4xl lg:text-[2.65rem] tracking-tight text-brand-charcoal leading-[1.15] lg:leading-[1.1] font-black"
@@ -65,7 +65,7 @@ export default function Sobre() {
                   <img
                     src={adrianaImg}
                     alt="Adriana Quintal — Terapeuta e Criadora da ARUC"
-                    referrerPolicy="no-referrer"
+                    referrerPolicy="no-referrer" decoding="async"
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
                   />
@@ -75,7 +75,7 @@ export default function Sobre() {
                 </div>
 
                 {/* Floating micro text badge - extremely refined stamp design */}
-                <div className="absolute bottom-4 left-4 right-4 bg-brand-charcoal/95 backdrop-blur-md px-4 py-3 rounded-2xl flex items-center gap-3 border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
+                <div className="absolute bottom-4 left-4 right-4 bg-brand-charcoal/95 px-4 py-3 rounded-2xl flex items-center gap-3 border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
                   <div className="w-9 h-9 bg-brand rounded-full flex items-center justify-center text-white shrink-0 shadow-inner">
                     <Smile className="w-5 h-5 text-white" />
                   </div>
@@ -181,7 +181,7 @@ export default function Sobre() {
                   <img
                     src={fernandaImg}
                     alt="Fernanda Moreira — Facilitadora"
-                    referrerPolicy="no-referrer"
+                    referrerPolicy="no-referrer" decoding="async"
                     loading="lazy"
                     className="w-full h-full object-cover object-[30%_center] group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
                   />
@@ -191,7 +191,7 @@ export default function Sobre() {
                 </div>
 
                 {/* Floating micro text badge - extremely refined stamp design */}
-                <div className="absolute bottom-4 left-4 right-4 bg-brand-charcoal/95 backdrop-blur-md px-4 py-3 rounded-2xl flex items-center gap-3 border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
+                <div className="absolute bottom-4 left-4 right-4 bg-brand-charcoal/95 px-4 py-3 rounded-2xl flex items-center gap-3 border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
                   <div className="w-9 h-9 bg-brand rounded-full flex items-center justify-center text-white shrink-0 shadow-inner">
                     <Smile className="w-5 h-5 text-white" />
                   </div>
