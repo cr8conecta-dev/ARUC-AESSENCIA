@@ -33,3 +33,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/        # pasta gerada pelo build do Vite
           server-dir: /public_html/ # pasta raiz do site na Hostinger
+          timeout: 120000           # 2 min de paciência (padrão é 30s) — evita "Timeout (control socket)"
+          port: 21                  # porta padrão de FTP da Hostinger
